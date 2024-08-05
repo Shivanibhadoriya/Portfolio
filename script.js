@@ -13,3 +13,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+document.querySelector(".navbar-toggler").addEventListener("click",function(){
+    console.log("I am clicked");
+    document.querySelector(".collapse").style.display="block !important";
+});

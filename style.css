@@ -23,8 +23,15 @@ body{
 }
 
 .collapse{
+    display:none !important;
     justify-content: space-around;
 }
+
+.navbar-collapse {
+    display: flex;
+    flex-direction: column;
+  }
+  
 
 .nav-item{
     margin-left:10px;
@@ -43,7 +50,9 @@ body{
     bottom: 0;
     left: 0;
 }
-
+.navbar-toggler{
+    display: block;
+}
 .nav-link.active::after {
     width: 50%;
 }
