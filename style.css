@@ -94,3 +94,118 @@ body{
 .describe{
     font-style:italic;
 }
+ 
+/* skills card */
+.skill-card{
+    display:flex;
+    justify-content: space-around;
+}
+
+.card-1{
+    background-color: rgba(39, 31, 31, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 240px;
+    height: 150px;
+}
+
+.card-1 h4{
+    background-color: rgba(39, 31, 31, 0.1);
+    font-size: 18px;
+    color: #c5bebe;
+}
+
+.card-1 i{
+    top: -18px;
+    position: relative;
+    font-size: 35px;
+    background: none;
+    color: #18d26e;
+}
+
+.card-1 h1{
+    background:#0e0e0e;
+}
+
+.skill-measure{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills{
+    margin: 0px 10px;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+}
+
+.skills p{
+    display: flex;
+    font-weight: 500;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-bottom: 3px;
+}
+
+.skills div{
+    height: 10px;
+    display: flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    
+}
+
+.skills div .skill{
+    background-color: #18d26e;
+}
+
+.skills div div{
+    flex-grow: 1;
+    background: rgb(194 192 192 / 10%);
+}
+
+.c{
+    width:90%;
+}
+
+.java{
+    width:80%;
+}
+
+.javascript{
+    width:50%;
+}
+
+.html{
+    width:60%;
+}
+
+.css{
+    width: 50%;
+}
+
+.sql{
+    width:75%;
+}
+
+.python{
+    width: 30%;
+}
+
+.interest{
+    display: flex;
+    flex-direction: row;
+}
+
+.int{
+    background: rgb(45 44 44 / 50%);
+    width: 50%;
+    height: 100px;
+    margin: 0px 10px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
