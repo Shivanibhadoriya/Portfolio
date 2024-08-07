@@ -99,11 +99,13 @@ body{
 .skill-card{
     display:flex;
     justify-content: space-around;
+    flex-wrap:wrap;
 }
 
 .card-1{
     background-color: rgba(39, 31, 31, 0.5);
     display: flex;
+    margin: 20px;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
@@ -131,12 +133,15 @@ body{
 
 .skill-measure{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    margin-bottom: 20px;
+    justify-content: space-between;
 }
 
 .skills{
     margin: 0px 10px;
-    width: 48%;
+    width: 46%;
     display: flex;
     flex-direction: column;
 }
@@ -161,7 +166,7 @@ body{
     background-color: #18d26e;
 }
 
-.skills div div{
+.skills div .skill-space{
     flex-grow: 1;
     background: rgb(194 192 192 / 10%);
 }
@@ -194,18 +199,58 @@ body{
     width: 30%;
 }
 
+.interest-parent{
+    padding-bottom:30px;
+}
+
 .interest{
     display: flex;
-    flex-direction: row;
+    flex-wrap:wrap;
+    /* flex-direction: row; */
 }
 
 .int{
-    background: rgb(45 44 44 / 50%);
-    width: 50%;
+    background: rgb(20 20 20 / 50%);
+    width: 22%;
     height: 100px;
-    margin: 0px 10px;
+    margin: 10px 10px;
     flex-wrap: wrap;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
+    border: 1px solid rgba(132, 0, 255, 0.4);
+    box-shadow: 5px 5px 5px rgb(51 49 53 / 40%);
+
+}
+
+.int span{
+    background: none;
+    font-weight: 500;
+    margin-left: 30px;
+}
+.int i{
+    background: none;
+    margin-left: 30px;
+}
+
+@media (max-width:990px){
+    .skills{
+        width:90%;
+    }
+
+    .int{
+        width:30%;
+    }
+}
+
+@media (max-width:775px){
+    .int{
+        width: 45%;
+    }
+}
+
+@media (max-width:545px){
+    .int{
+        width:90%;
+    }
 }
