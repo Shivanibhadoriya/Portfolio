@@ -144,6 +144,118 @@ body{
     background: none;
 }
  
+/* project */
+.projects{
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project{
+    background: rgb(72 68 68 / 50%);
+    align-items: center;
+    text-align:center;
+    /* height:350px; */
+    display: flex;
+    margin:20px;
+    padding:20px;
+    border: 1px solid;
+    border-radius:20px;
+}
+
+.project-imgs{
+    background: none;
+}
+
+.project-outer{
+    display: flex;
+    /* width: 100%;
+    height: 350px; */
+    background: none;
+}
+
+    /* .project-outer button{
+        width: 0px;
+        height: 40px;
+        background: none;
+    } */
+
+.project-img{
+    display:none;
+    /* width: 100%;
+    height: 350px; */
+    position: relative;
+    background: none;
+}
+
+.project-img img{
+    width: 600px;
+    height: 350px;
+    border-radius:10px;
+}
+
+.left{
+    position: relative;
+    right:91% ;
+    /* top: 150px; */
+    border: none;
+    background: none;
+}
+
+.right{
+    position: relative;
+    right: 10%;
+    /* top: 150px; */
+    border: none;
+    background: none;
+}
+
+.project-outer button i{
+    background: rgb(18 33 37 / 30%);
+    font-size: 20px;
+}
+
+.proj-desc{
+     background:none;
+}
+
+#project-heading{
+   color:white;
+}
+
+.proj-desc div h1,.proj-desc div p,.proj-desc div{
+    background: none;
+    color:rgb(159, 156, 165);
+}
+
+
+ .check-out{
+    width: 40%;
+    height: 35px;
+    /* margin: 5px 4px; */
+    border:1px solid  white;
+    background-color: rgb(60, 60, 78);
+    border-radius: 10px;
+}
+
+.project-img.active{
+    display:block;
+}
+
+.pro-btn{
+    display: flex;
+    justify-content: space-around;
+    background: none;
+}
+
+.check-out a{
+    background: none;
+    text-decoration: none;
+    color:azure;
+}
+
 /* skills card */
 .skill-card{
     display:flex;
@@ -263,7 +375,6 @@ body{
 .interest{
     display: flex;
     flex-wrap:wrap;
-    /* flex-direction: row; */
 }
 
 .int{
@@ -291,6 +402,7 @@ body{
 }
 
 .develop{
+    padding: 20px;
     display: flex;
     justify-content: center;
 }
@@ -335,11 +447,19 @@ body{
     .int{
         width:30%;
     }
+    .project{
+        flex-direction: column;
+    }
 }
 
 @media (max-width:775px){
     .int{
         width: 45%;
+    }
+
+    .project-img img{
+        width:440px;
+        height: 240px;
     }
 }
 
@@ -347,4 +467,10 @@ body{
     .int{
         width:90%;
     }
+
+    .project-img img{
+        width:380px;
+        height: 220px;
+    }
+
 }
