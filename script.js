@@ -14,16 +14,16 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-document.querySelector(".navbar-toggler").addEventListener("click",function(){
-    console.log("I am clicked");
-    document.querySelector(".collapse").style.display="block !important";
-});
+function showNav(){
+    console.log("i am inside the function");
+    let nav = document.querySelector("#navshow");
+    nav.classList.toggle("active");
+}
+
 
 const projects = document.querySelectorAll(".project");
 projects.forEach(project =>{
-  console.log("focus check");
   project.addEventListener('mousedown',function(){
-   console.log("focus gain");
     let images = project.querySelectorAll(".project-img");
     let i = 0; 
     let size = images.length;
@@ -33,7 +33,6 @@ projects.forEach(project =>{
     }
     let leftButton = project.querySelector(".left");
     leftButton.addEventListener("click",function(){
-        console.log("i am left click");
         images[i].classList.remove("active");
         i = (i+size-1)%size;    
         images[i].classList.add("active");
@@ -41,7 +40,6 @@ projects.forEach(project =>{
 
     let rightButton = project.querySelector(".right");
     rightButton.addEventListener("click",function(){
-        console.log("i am right click");
         images[i].classList.remove("active");
         i = (i+size+1)%size;    
         images[i].classList.add("active");
