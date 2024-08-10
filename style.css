@@ -45,7 +45,7 @@ body{
     display: block;
     width: 0;
     height: 2px;
-    background-color:#18d26e;;
+    background:linear-gradient(rgba(12, 27, 245, 0.5), rgba(149, 12, 245, 0.5), rgba(73, 12, 245, 0.5), rgba(73, 12, 245, 0.5), rgba(73, 12, 245, 0.5));
     transition: width 0.3s;
     bottom: 0;
     left: 0;
@@ -74,6 +74,7 @@ body{
  }
 
  .about-section{
+    width: 400px;
     letter-spacing: 2px;
     text-transform: uppercase;
     color: #aaaaaa;
@@ -85,16 +86,25 @@ body{
      margin:5px;
      display:inline-block;
      width:120px;
-     background-color:#18d26e;
+     background:linear-gradient(rgba(12, 27, 245, 0.5), rgba(149, 12, 245, 0.5), rgba(73, 12, 245, 0.5), rgba(73, 12, 245, 0.5), rgba(73, 12, 245, 0.5));
      transition: width 0.3s;
 }
 .designation{
-    color:#18d26e;
+    color:rgb(133, 76, 230);
 }
 .describe{
     font-style:italic;
 }
 
+.about{
+    padding-left:20px;
+}
+
+.social a{
+    padding-left:5px;
+    text-decoration:none;
+    color: rgb(19 46 213);
+}
 
 /* platforms */
 .platforms{
@@ -105,7 +115,7 @@ body{
 
 .platfm{
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
@@ -117,7 +127,7 @@ body{
     border: 1px solid rgba(132, 0, 255, 0.4);
 }
 
-.platfm span{
+.platfm h1{
     font-size:27px;
     font-weight: 700;
     display: flex;
@@ -127,14 +137,15 @@ body{
 .platfm p{
     position: relative;
     padding: 0px 20px;
+    text-align:center;
 }
 
 .platfm button{
-    /* border-radius: 20px; */
+    border-radius: 20px;
     width: 50%;
     height: 30px;
-    border: none;
-    box-shadow: 2px 2px 2px 2px #232348;
+    border: 1.8px solid rgb(133, 76, 230);
+    margin:0px 25%;
     background-color: rgba(26, 26, 95, 0.2);
 }
 
@@ -145,47 +156,36 @@ body{
 }
  
 /* project */
+
 .projects{
-    padding:20px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
+    align-items:center;
 }
 
 .project{
-    background: rgb(72 68 68 / 50%);
+    background: rgba(30, 29, 29, 0.5);
     align-items: center;
     text-align:center;
-    /* height:350px; */
     display: flex;
     margin:20px;
     padding:20px;
-    border: 1px solid;
+    border: 1px solid rgba(132, 0, 255, 0.4);
     border-radius:20px;
 }
 
-.project-imgs{
+.project-imgs{  
     background: none;
 }
 
 .project-outer{
-    display: flex;
-    /* width: 100%;
-    height: 350px; */
     background: none;
 }
 
-    /* .project-outer button{
-        width: 0px;
-        height: 40px;
-        background: none;
-    } */
-
 .project-img{
     display:none;
-    /* width: 100%;
-    height: 350px; */
     position: relative;
     background: none;
 }
@@ -197,24 +197,22 @@ body{
 }
 
 .left{
-    position: relative;
-    right:91% ;
-    /* top: 150px; */
-    border: none;
-    background: none;
+     right: 40%;
 }
 
 .right{
-    position: relative;
-    right: 10%;
-    /* top: 150px; */
-    border: none;
-    background: none;
+     right: -40%;
 }
 
 .project-outer button i{
     background: rgb(18 33 37 / 30%);
     font-size: 20px;
+}
+.project-outer button{
+    top: -180px;
+    position: relative;
+    border: none;
+    background: none;
 }
 
 .proj-desc{
@@ -234,8 +232,7 @@ body{
  .check-out{
     width: 40%;
     height: 35px;
-    /* margin: 5px 4px; */
-    border:1px solid  white;
+    border: 1.8px solid rgb(133, 76, 230);
     background-color: rgb(60, 60, 78);
     border-radius: 10px;
 }
@@ -285,7 +282,7 @@ body{
     position: relative;
     font-size: 35px;
     background: none;
-    color: #18d26e;
+    color: #4b3192;
 }
 
 .card-1 h1{
@@ -324,7 +321,7 @@ body{
 }
 
 .skills div .skill{
-    background-color: #18d26e;
+    background-image:linear-gradient(rgba(12, 27, 245, 0.5), rgba(149, 12, 245, 0.5), rgba(73, 12, 245, 0.5), rgba(73, 12, 245, 0.5), rgba(73, 12, 245, 0.5));
 }
 
 .skills div .skill-space{
@@ -396,6 +393,7 @@ body{
     font-weight: 500;
     margin-left: 30px;
 }
+
 .int i{
     background: none;
     margin-left: 30px;
@@ -411,15 +409,12 @@ body{
     display:flex;
     flex-wrap:wrap;
     justify-content: center;
-    width: 330px;
-    height: 300px;
-    background:linear-gradient(rgba(12, 27, 245, 0.5), rgba(149, 12, 245, 0.5), rgba(73, 12, 245, 0.5), rgba(73, 12, 245, 0.5), rgba(73, 12, 245, 0.5));
+    background:none;
     border-radius: 20px;
 }
 
 .tools{
     width:200px;
-    /* justify-content: space-around; */
     display: flex;
     padding: 10px;
     margin:10px;
@@ -429,8 +424,9 @@ body{
 }
 
 .tools .icon{
-    width:20px;
-    height:20px;
+    width:30px;
+    height:30px;
+    font-size:30px;
 }
 
 .tools h2{
@@ -438,6 +434,58 @@ body{
     padding: 0px 5px;
     padding-left:10px;
 }
+
+/* contact section  */
+
+.contact-section h1{
+    font-size: 20px;
+    text-align: center;
+    color: #6d6262;
+}
+
+.contact-head{
+    font-size:40px;
+    text-align:center;
+    padding-bottom:20px;
+}
+.contact h1{
+    text-align:left;
+    color:white;
+    font-size:25px;
+    padding-left:10px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    width:70%;
+    margin: auto;
+    padding: 20px 40px;
+    border: 1px solid;
+    border-radius: 20px;
+}
+
+.contact input,.contact textarea{
+    height: 50px;
+    font-size:20px;
+    padding: 5px 10px;
+    margin: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+#message{
+    height: 150px;
+}
+
+#email-send{
+    margin: 0 27%;
+    width: 45%;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
 
 @media (max-width:990px){
     .skills{
@@ -450,6 +498,10 @@ body{
     .project{
         flex-direction: column;
     }
+
+    .platfm{
+        width:400px;
+    }
 }
 
 @media (max-width:775px){
@@ -458,8 +510,12 @@ body{
     }
 
     .project-img img{
-        width:440px;
+        width:400px;
         height: 240px;
+    }
+
+    .project-outer button{
+        top:-140px;
     }
 }
 
@@ -469,8 +525,25 @@ body{
     }
 
     .project-img img{
-        width:380px;
-        height: 220px;
+        width:320px;
+        height: 200px;
+    }
+
+    .project{
+        width:330px;
+        padding: 10px 10px 20px 10px;
+    }
+     
+    .project-outer button{
+        top:-100px;
+    }
+    
+
+    .platfm{
+        width:300px;
+    }
+    .platfm p{
+        padding:0px 10px;
     }
 
 }
